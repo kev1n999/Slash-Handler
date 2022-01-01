@@ -37,6 +37,11 @@ Após as configurações, você pode criar as pastas para os seus comandos.
 2. Dentro desta pasta, crie outras pastas com o nome de categorias (ex: `Utilidades, Moderação, Economia`)
 3. Após isso, apenas crie os comandos para cada categoria
 
+# Inicialização
+
+1. Abra a pasta do projeto no terminal usando: `cd Slash-Handler-main`
+2. Para iniciar use: `node .` ou `node index.js`
+
 # Como criar os comandos
 
 * Exemplo de um comando ping
