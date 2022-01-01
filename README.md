@@ -27,6 +27,8 @@ GUILD_ID = <ID_DO_SERVIDOR>
 FOLDER_NAME = <NOME_DA_PASTA>
 ```
 
+* Obs: Insira as informações sem "<>"
+
 # Pasta de comandos
 
 Após as configurações, você pode criar as pastas para os seus comandos. 
