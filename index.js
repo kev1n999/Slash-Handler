@@ -39,8 +39,7 @@ client.on("ready", () => {
     
         for (const file of commandFile) {
             const command = require(`${dirName}/${folder}/${file}`);
-    
-            if (command.on) {
+            
                 commands.create({
                     name: command.name,
                     description: command.description,
@@ -52,20 +51,6 @@ client.on("ready", () => {
 
                     command.run(client, interaction);
                 });
-                
-            } else {
-                commands.create({
-                    name: command.name,
-                    description: command.description,
-                    options: command.options 
-                });
-
-                client.on("interactionCreate", async (interaction) => {
-                    if (!interaction.isCommand()) return;
-
-                    command.run(client, interaction);
-                });
-            }
         }
     }
 });
