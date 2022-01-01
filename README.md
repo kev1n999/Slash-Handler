@@ -6,11 +6,11 @@ Uma handler para você organizar seus comandos de barra.
  
 * Versão 13 - v13
 
-# Instalação da Dependência
+# Instalação das Dependências
  
 1. Você precisa ter o NodeJS instalado (https://nodejs.org/)
 2. Abra a pasta do projeto no terminal 
-3. Dentro da pasta, instale com: `npm install discord.js`
+3. Dentro da pasta, instale com: `npm install discord.js dotenv`
 
 # Configuração
 
