@@ -26,7 +26,9 @@ module.exports = {
         .setDescription(`Clique [aqui](${userAvatar}) para baixar a imagem!`)
         .setImage(userAvatar)
         .setColor("RED")
-
-        await interaction.reply({ content: "Avatar", embeds: [avatarEmbed] });
+        
+        if (commandName === "avatar") {
+            await interaction.reply({ embeds: [avatarEmbed] });
+        }
     }
 }
