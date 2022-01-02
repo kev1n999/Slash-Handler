@@ -17,18 +17,17 @@ module.exports = {
     run: async (client, interaction) => {
         const { commandName, options } = interaction;
 
-        const user = options.getUser("usuário");
-        const userAvatar = user.displayAvatarURL({ format: "png", size: 1024 });
-
-        const avatarEmbed = new MessageEmbed()
-
-        .setTitle(`:frame_photo:  Avatar de ${user.username}`)
-        .setDescription(`Clique [aqui](${userAvatar}) para baixar a imagem!`)
-        .setImage(userAvatar)
-        .setColor("RED")
-        
         if (commandName === "avatar") {
-            await interaction.reply({ embeds: [avatarEmbed] });
-        }
+            const user = options.getUser("usuário");
+            const userAvatar = user.displayAvatarURL({ format: "png", size: 1024 });
+
+            const avatarEmbed = new MessageEmbed()
+
+           .setTitle(`:frame_photo:  Avatar de ${user.username}`)
+           .setDescription(`Clique [aqui](${userAvatar}) para baixar a imagem!`)
+           .setImage(userAvatar)
+           .setColor("RED")
+
+           await interaction.reply({ embeds: [avatarEmbed] });
     }
 }
