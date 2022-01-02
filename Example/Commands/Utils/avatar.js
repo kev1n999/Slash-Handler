@@ -1,3 +1,5 @@
+// Exemplo de um avatar command
+
 const { MessageEmbed } = require("discord.js");
 
 module.exports = {
