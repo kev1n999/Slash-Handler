@@ -44,7 +44,7 @@ module.exports = {
 
     options: [
         {
-            name: "avatar", // Nome da opção
+            name: "usuário", // Nome da opção
             description: "Mencione o usuário", // Descrição da opção
             type: "USER", // O tipo "USER" permite que você mencione um usuário no comando
             required: true // Use "true" se a opção for necessária, ou "false" se a opção for opcional
