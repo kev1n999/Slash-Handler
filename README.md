@@ -59,6 +59,4 @@ module.exports = {
 }
 ```
 
-<img src="https://media.discordapp.net/attachments/910721709768859719/926937041462259802/unknown.png">
-
 Caso queira mais exemplos, dê uma olhada na pasta "Examples".
